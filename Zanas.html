@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>За нас</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #f0f0f0;
+            text-align: center;
+        }
+
+        header {
+            color: #4CAF50;
+            font-size: 56px;
+            margin: 30px 0 10px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 15px;
+            margin: 0 auto 30px;
+            background-color: #1a1a1a;
+            border-radius: 25px;
+            width: fit-content;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        nav li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px 18px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        nav li a:hover {
+            background-color: #4CAF50;
+            color: black;
+        }
+
+        .about-us {
+            padding: 30px 20px;
+        }
+
+        .about-us h2 {
+            color: #4CAF50;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .about-card {
+            background-color: #1b1b1b;
+            padding: 25px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .about-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+        }
+
+        .about-card h3 {
+            color: #ddd;
+            margin-bottom: 12px;
+        }
+
+        .about-card p {
+            color: #ccc;
+            line-height: 1.5;
+        }
+
+        footer{
+            background-color: #111;
+            color: #aaa;
+            padding: 25px;
+            margin-top: 50px;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+        }
+
+        footer p {
+            margin: 0;
+        }
+  @media (max-width: 900px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .offers {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .offer-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .slider {
+    width: 95%;
+  }
+
+  .slides img {
+    width: 45%;
+    height: auto;
+    margin: 5px;
+  }
+
+  header {
+    font-size: 42px;
+    margin: 20px 0 10px;
+  }
+
+  section h1, main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  nav li a {
+    font-size: 18px;
+    padding: 8px 14px;
+  }
+}
+    </style>
+</head>
+<body>
+
+<header><b>Тамаро Маркет</b></header>
+
+<nav>
+    <ul>
+     <li><a href="index.html">Почетна</a></li>
+    <li><a href="prizvodi.html">Производи</a></li>
+    <li><a href="kontakti.html">Контакт</a></li>
+    <li><a href="Zanas.html">За нас</a></li>
+    <li><a href="popusti.html">Попусти</a></li>
+    </ul>
+</nav>
+
+<section class="about-us">
+  <h2>За нас</h2>
+  <div class="about-container">
+
+    <div class="about-card">
+      <h3>Кој сме ние</h3>
+      <p>Тамаро Маркет е семеен маркет кој нуди свежи и органски производи од локални производители. Нашата цел е да ви овозможиме квалитетна храна за секојдневна употреба.</p>
+    </div>
+
+    <div class="about-card">
+      <h3>Нашата мисија</h3>
+      <p>Да обезбедиме секојдневно свежи производи со љубов и грижа кон нашите клиенти, со фокус на квалитет и доверба.</p>
+    </div>
+
+    <div class="about-card">
+      <h3>Нашите вредности</h3>
+      <p>Локално, здраво и одржливо – веруваме дека храната треба да биде чиста, свежа и достапна за секого.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Тамаро Маркет | Бул. Македонија 15, Охрид | Телефон: 071 123 456</p>
+</footer>
+
+</body>
+</html>

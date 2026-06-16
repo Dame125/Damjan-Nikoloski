@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Производи - Тамаро Маркет</title>
+<style>
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+header {
+    color: #4CAF50;
+    font-size: 56px;
+    margin: 30px 0 10px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    margin: 0 auto 30px;
+    background-color: #1a1a1a;
+    border-radius: 25px;
+    width: fit-content;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav li a:hover {
+    background-color: #4CAF50;
+    color: black;
+}
+
+.products {
+    padding: 30px 20px;
+}
+
+.products h2 {
+    color: #4CAF50;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1b1b1b;
+    border-radius: 15px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+
+.card h3 {
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+
+footer{
+    background-color: #111;
+    color: #aaa;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+}
+
+footer p {
+    margin: 0;
+}
+@media (max-width: 900px) {
+  /* Менито ќе стане вертикално */
+ nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  /* Картичките ќе се редат една под друга и пошироки */
+  .cards {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  /* Хедер и наслов се прилагодуваат */
+  header {
+    font-size: 42px;
+    margin: 20px 0 10px;
+  }
+
+  .products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  /* Копчињата и текстот се читаат лесно */
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card button {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+
+  nav li a {
+    font-size: 18px;
+    padding: 8px 14px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<header><b>Тамаро Маркет</b></header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Почетна</a></li>
+    <li><a href="prizvodi.html">Производи</a></li>
+    <li><a href="kontakti.html">Контакт</a></li>
+    <li><a href="Zanas.html">За нас</a></li>
+     <li><a href="popusti.html">Попусти</a></li>
+  </ul>
+</nav>
+
+<section class="products">
+  <h2>Нашите производи</h2>
+
+  <div class="cards">
+    <div class="card">
+      <img src="suvo.jpg" alt="Сувомеснати производи">
+      <h3>Сувомеснати производи</h3>
+      <button>Купи сега</button>
+    </div>
+    <div class="card">
+      <img src="Honey_Puffs_Breakfast_Cereal_Box.jpg" alt="Житарици">
+      <h3>Житарици</h3>
+      <button>Купи сега</button>
+    </div>
+    <div class="card">
+      <img src="ovosje.jpg" alt="Овошје">
+      <h3>Овошје</h3>
+      <button>Купи сега</button>
+    </div>
+    <div class="card">
+      <img src="vege.jpg" alt="Зеленчук">
+      <h3>Зеленчук</h3>
+      <button>Купи сега</button>
+    </div>
+    <!-- Додади дополнителни категории тука -->
+    <div class="card">
+      <img src="mleko.jpg" alt="Млечни производи">
+      <h3>Млечни производи</h3>
+      <button>Купи сега</button>
+    </div>
+    <div class="card">
+      <img src="sok.jpg" alt="Сокови">
+      <h3>Сокови</h3>
+      <button>Купи сега</button>
+    </div>
+    <div class="card">
+      <img src="download 3.jpg" alt="Леб и бели печива">
+      <h3>Леб и бели печива</h3>
+      <button>Купи сега</button>
+    </div>
+    <div class="card">
+      <img src="morsko.jpg" alt="Морска храна">
+      <h3>Морска храна</h3>
+      <button>Купи сега</button>
+    </div>
+    <div class="card">
+      <img src="mesoo.jpg" alt="Месо">
+      <h3>Месо</h3>
+      <button>Купи сега</button>
+    </div>
+    <div class="card">
+      <img src="slat.jpg" alt="Слатки">
+      <h3>Слатки</h3>
+      <button>Купи сега</button>
+    </div>
+    <div class="card">
+      <img src="macki.jpg" alt="Храна за миленици">
+      <h3>Храна за миленици</h3>
+      <button>Купи сега</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Тамаро Маркет | Бул. Македонија 15, Охрид | Телефон: 071 123 456</p>
+</footer>
+
+</body>
+</html>

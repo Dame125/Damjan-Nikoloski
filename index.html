@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тамаро</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0a0a0a;
+      color: #f0f0f0;
+      text-align: center;
+    }
+
+    header {
+      color: #4CAF50;
+      font-size: 56px;
+      margin: 30px 0 10px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px;
+      margin: 0 auto 30px;
+      background-color: #1a1a1a;
+      border-radius: 25px;
+      width: fit-content;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    nav li a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    nav li a:hover {
+      background-color: #4CAF50;
+      color: black;
+    }
+
+    section {
+      background-color: #111;
+      border-radius: 20px;
+      margin: 20px auto;
+      padding: 30px 20px;
+      max-width: 900px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    }
+
+    section h1 {
+      color: #4CAF50;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    main h2 {
+      color: #4CAF50;
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .offers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .offer-card {
+      background-color: #1b1b1b;
+      border-radius: 15px;
+      padding: 25px 20px;
+      width: 260px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+    }
+
+    .offer-card i {
+      font-size: 40px;
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+
+    .offer-card p {
+      font-size: 17px;
+      color: #ddd;
+      margin: 0;
+    }
+
+    /* Галерија */
+    .slider {
+      width: 90%;
+      margin: 70px auto;
+      overflow: hidden;
+      border-radius: 20px;
+      border: 2px solid #4CAF50;
+      box-shadow: 0 0 20px rgba(76, 175, 80, 0.4);
+    }
+
+    .slides {
+      display: flex;
+      width: calc(200px * 11);
+      animation: slide 25s linear infinite;
+    }
+
+    .slides img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      margin: 6px;
+      border-radius: 10px;
+      filter: brightness(0.9);
+      transition: all 0.3s ease;
+    }
+
+    .slides img:hover {
+      filter: brightness(1.2);
+      transform: scale(1.05);
+    }
+
+    @keyframes slide {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    footer {
+      background-color: #111;
+      color: #aaa;
+      padding: 25px;
+      margin-top: 50px;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+    }
+
+    footer p {
+      margin: 0;
+    }
+  @media (max-width: 900px) {
+  /* Менито ќе стане вертикално */
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  /* Картичките со понуди ќе бидат една под друга */
+  .offers {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .offer-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  /* Галерија се прилагодува */
+  .slider {
+    width: 95%;
+  }
+
+  .slides img {
+    width: 45%;
+    height: auto;
+    margin: 5px;
+  }
+
+  /* Прилагодување на хедер и наслов */
+  header {
+    font-size: 42px;
+    margin: 20px 0 10px;
+  }
+
+  section h1, main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  /* Мали промени на линковите во менито за читање */
+  nav li a {
+    font-size: 18px;
+    padding: 8px 14px;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header><b>Тамаро Маркет</b></header>
+
+  <nav>
+    <ul>
+    <li><a href="index.html">Почетна</a></li>
+    <li><a href="prizvodi.html">Производи</a></li>
+    <li><a href="kontakti.html">Контакт</a></li>
+    <li><a href="Zanas.html">За нас</a></li>
+     <li><a href="popusti.html">Попусти</a></li>
+  </nav>
+
+  <section>
+    <h1>Најдобрите супермаркети во Охрид</h1>
+    <p>Добредојдовте на нашата страница каде што ќе ги најдете најпопуларните и најповолни супермаркети во Охрид.</p>
+    <p>Секојдневно свежи производи, љубезна услуга и најдобри понуди за сите наши посетители.</p>
+  </section>
+
+  <main>
+    <h2>Што нудиме</h2>
+    <div class="offers">
+      <div class="offer-card">
+        <i>🍞</i>
+        <p>Секој ден свежа храна</p>
+      </div>
+      <div class="offer-card">
+        <i>🥐</i>
+        <p>Секој ден свежи печива</p>
+      </div>
+      <div class="offer-card">
+        <i>🍎</i>
+        <p>Свежо овошје и зеленчук</p>
+      </div>
+      <div class="offer-card">
+        <i>🌿</i>
+        <p>Органска храна и локални производи</p>
+      </div>
+      <div class="offer-card">
+        <i>💸</i>
+        <p>Намалени цени и промоции секоја недела</p>
+      </div>
+      <div class="offer-card">
+        <i>🤝</i>
+        <p>Брза и љубезна услуга за сите посетители</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Галерија (на крај) -->
+  <div class="slider">
+    <div class="slides">
+      <img src="download.jpg" alt="">
+      <img src="download (1).jpg" alt="">
+      <img src="images.jpg" alt="">
+      <img src="images (1).jpg" alt="">
+      <img src="images (2).jpg" alt="">
+      <img src="images (3).jpg" alt="">
+      <img src="images (4).jpg" alt="">
+      <img src="images (5).jpg" alt="">
+      <img src="images (6).jpg" alt="">
+      <img src="images (7).jpg" alt="">
+      <img src="images (8).jpg" alt="">
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Тамаро Маркет | Бул. Македонија 15, Охрид | Телефон: 071 123 456</p>
+  </footer>
+
+</body>
+</html>
